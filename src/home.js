@@ -42,6 +42,8 @@ hourText.innerHTML = "We are open on:<br>";
 const hourText2 = document.createElement("p");
 hourText2.innerHTML = "Mondays: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12PM - 10PM<br>Tuesdays: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12PM - 10PM<br>Wednesdays: 12PM - 10PM<br>Thursdays: &nbsp;&nbsp;12PM - 10PM<br>Fridays: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12PM - 12AM<br>Saturdays: &nbsp;&nbsp;12PM - 12AM";
 
+hourText2.style.fontWeight = "bold";
+
 hourSubbox.appendChild(hourTitle);
 hourSubbox.appendChild(hourText);
 hourSubbox.appendChild(hourText2);
