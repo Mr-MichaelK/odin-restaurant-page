@@ -119,6 +119,7 @@ main {
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
+    padding-left: 4rem;
 }
 
 .contactsBox b {
@@ -237,5 +238,20 @@ hr {
 
     .menuContainer {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .subbox p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .contactsBox {
+        padding-left: 0;
+    }
+    .subbox p {
+        font-size: 1.25rem;
     }
 }

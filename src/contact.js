@@ -24,7 +24,6 @@ contactTitle.textContent = "Contact Information:";
 
 const contactsBox = document.createElement("div");
 contactsBox.className = "contactsBox";
-contactsBox.style.paddingLeft = "4rem";
 
 const linkedin = document.createElement("div");
 linkedin.innerHTML = "<p><b><u>LinkedIn:</u></b> N/A</p>";
