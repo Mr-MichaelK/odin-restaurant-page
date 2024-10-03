@@ -2,12 +2,13 @@
 import "./styles.css";
 import header from "./header.js";
 import menu from "./menu.js";
-import home from "./home.js"
+import contact from "./contact.js";
+import home from "./home.js";
 
 
 document.body.appendChild(header);
 
 const main = document.createElement("main");
-main.appendChild(home);
+main.appendChild(contact);
 
 document.body.appendChild(main);

@@ -113,3 +113,18 @@ main {
     font-size: 1.8rem;
     font-style: italic;
 }
+
+.contactsBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contactsBox b {
+    font-style: normal;
+}
+
+.contactsBox a {
+    color: black;
+}
