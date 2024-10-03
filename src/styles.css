@@ -19,22 +19,24 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     position: relative;
     left: 20%;
     align-self: flex-end;
     padding-bottom: 4rem;
+    flex-wrap: wrap;
 }
 
 nav button {
-    flex: 1 1 auto;
+    flex: 1 1 auto; 
     padding: 0.7rem 1.4rem;
     font-size: 1.2rem;
     border-radius: 25px;
     border: 2px solid black;
     cursor: pointer;
+    margin-bottom: 0.5rem;
 }
 
 .chickslogo {
@@ -74,16 +76,14 @@ main {
     border-radius: 15px;
     color: #190d00;
     padding: 2rem 4rem;
-    width: 45%;
+    width: 100%; 
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
 
 .title {
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 0, 0);
     padding: 1rem 2rem;
     border-radius: 80px;
     text-align: center;
@@ -177,4 +177,65 @@ hr {
     width: 80%;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+
+@media (max-width: 1100px) {
+    .chickslogo {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    nav {
+        left: 10%;
+    }
+
+    nav button {
+        flex: 1 1 auto;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .contentTable {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .section h1 {
+        font-size: 2rem;
+    }
+
+    .menuContainer {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .chickslogo {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    nav {
+        left: 0;
+    }
+
+    nav button {
+        flex: 1 1 auto;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .contentTable {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .section h1 {
+        font-size: 2rem;
+    }
+
+    .menuContainer {
+        font-size: 1.2rem;
+    }
 }
