@@ -9,6 +9,6 @@ import home from "./home.js";
 document.body.appendChild(header);
 
 const main = document.createElement("main");
-main.appendChild(contact);
+main.appendChild(menu);
 
 document.body.appendChild(main);
