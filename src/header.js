@@ -1,5 +1,9 @@
 // header.js
 import ChicksLogoSRC from "./images/Chicks-Restaurant.jpeg";
+import main from "./index";
+import menu from "./menu.js";
+import contact from "./contact.js";
+import home from "./home.js";
 
 const ChicksLogo     = document.createElement("img");
 ChicksLogo.src       = ChicksLogoSRC;
@@ -19,19 +23,33 @@ header.appendChild(box);
 
 const nav = document.createElement("nav");
 
-const home    = document.createElement("button");
-const menu    = document.createElement("button");
-const contact = document.createElement("button");
+const homeBut    = document.createElement("button");
+const menuBut    = document.createElement("button");
+const contactBut = document.createElement("button");
 
-home.textContent    = "Home";
-menu.textContent    = "Menu";
-contact.textContent = "Contact";
+homeBut.textContent    = "Home";
+menuBut.textContent    = "Menu";
+contactBut.textContent = "Contact";
 
 // TODO: add event listeners
+homeBut.addEventListener("click", () => {
+    main.removeChild(main.firstChild);
+    main.appendChild(home);
+});
 
-nav.appendChild(home);
-nav.appendChild(menu);
-nav.appendChild(contact);
+menuBut.addEventListener("click", () => {
+    main.removeChild(main.firstChild);
+    main.appendChild(menu);
+})
+
+contactBut.addEventListener("click", () => {
+    main.removeChild(main.firstChild);
+    main.appendChild(contact);
+})
+
+nav.appendChild(homeBut);
+nav.appendChild(menuBut);
+nav.appendChild(contactBut);
 
 header.appendChild(nav);
 

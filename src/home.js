@@ -23,7 +23,7 @@ const missionTitle = document.createElement("h1");
 missionTitle.textContent = "Mission:";
 
 const missionText = document.createElement("p");
-missionText.textContent = "We aim to delight our customers with expertly crafted chicken dishes, from crispy fried to perfectly grilled, preserving the sacred experience of great taste";
+missionText.textContent = "We aim to delight our customers with expertly crafted chicken dishes, from crispy fried to perfectly grilled, preserving the sacred experience of great taste.";
 
 missionSubbox.appendChild(missionTitle);
 missionSubbox.appendChild(missionText);
